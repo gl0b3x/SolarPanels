@@ -1,6 +1,6 @@
 ## Full project "Internet shop alternative energy"
 
-### Cuz of puur hosting - the site may take a long time to load products or may not display them, and sometimes it may redirect to a 404 page
+### Cuz of pur hosting - the site may take a long time to load products or may not display them, and sometimes it may redirect to a 404 page
 
 ### To visit click here: https://internet-shop-solar-panels.vercel.app/
 ### All licenses are written in the file named "License."
