@@ -1,0 +1,104 @@
+.contactsForm {
+  width: 80%;
+}
+
+.contactsForm p {
+  color: var(--textHover);
+  font-size: 18px;
+  text-align: left;
+  margin-top: 1vh;
+}
+
+.titleForm {
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+  color: var(--textHover);
+  padding: 1vh 0;
+  border-bottom: 3px solid #2d2d2d;
+}
+
+.buttonNext {
+  width: 100%;
+  padding: 1vh 1vw;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background-color: var(--background2);
+  transition: 0.2s ease-in-out;
+  color: var(--text);
+  opacity: 0.7;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.buttonNext:hover {
+  border: 1px solid var(--borderHover);
+  color: var(--textHover);
+  opacity: 1;
+}
+
+.bonusesUser {
+  color: var(--textHover);
+  font-size: 22px;
+}
+
+.useUserBonuses {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2vh;
+  gap: 1vh;
+}
+
+.useBonuses {
+  color: var(--text);
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.useBonuses:hover {
+  color: var(--textHover);
+  opacity: 1;
+}
+
+.bonuseApply {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttonUseBonuses {
+  padding: 1vh 1vw;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background-color: var(--background2);
+  transition: 0.2s ease-in-out;
+  color: var(--text);
+  opacity: 0.7;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.buttonUseBonuses:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 601px) {
+  .contactsForm p {
+    font-size: 16px;
+  }
+  .titleForm {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .contactsForm p {
+    font-size: 16px;
+  }
+  .titleForm {
+    font-size: 18px;
+  }
+}

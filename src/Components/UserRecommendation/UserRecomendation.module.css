@@ -1,0 +1,112 @@
+.recommendationWrapper {
+    background-color: var(--background);
+    border-top: 1px solid #2d2d2d;
+    height: 55vh;
+}
+
+.recommendationSlider {
+    padding: 2vh 0;
+    background-color: var(--background);
+    height: 90%;
+}
+
+.SlideItem {
+    height: 95%;
+}
+
+.SlideItem a{
+    height: 100%;
+}
+
+.SlideItem a img {
+    height: 17vh;
+}
+
+.swiperLoading {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.recommendationName {
+    text-align: center;
+    padding-bottom: 2vh;
+    border-bottom: 1px solid #2d2d2d;
+}
+
+.recommendationName span {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--textHover);
+}
+
+.recomendationSlide {
+    background-color: var(--background2);
+    border-radius: 18px;
+    padding: 2vh 1vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.recomendationSlide:hover {
+    border: 1px solid var(--borderHover);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .recommendationWrapper {
+        padding: 2vh 4vw;
+    }
+    .recommendationName span {
+        font-size: 22px;
+    }
+    .SlideItem {
+        padding: 0 5vw;
+    }
+    .SlideItem a {
+        height: 95%;
+        padding: 0 5vw;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+    .recommendationWrapper {
+        padding: 2vh 4vw;
+    }
+    .recommendationName span {
+        font-size: 22px;
+    }
+    .SlideItem a {
+        padding: 0 3vw;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .recommendationWrapper {
+        padding: 2vh 4vw;
+    }
+
+    .recommendationName span {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .recommendationWrapper {
+        padding: 2vh 8vw;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .recommendationWrapper {
+        padding: 2vh 13.5vw;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .recommendationWrapper {
+        padding: 2vh 13.5vw;
+    }
+}

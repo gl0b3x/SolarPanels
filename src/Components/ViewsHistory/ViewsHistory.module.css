@@ -1,0 +1,173 @@
+.historyWraper {
+  background-color: var(--background);
+  border-top: 1px solid #2d2d2d;
+  border-bottom: 1px solid #2d2d2d;
+}
+
+.historySlider {
+  padding: 2vh 0;
+  background-color: var(--background);
+  height: 30vh;
+}
+
+.swiper-button-next:after {
+  color: green;
+}
+
+.historyLoading {
+  display: flex;
+  align-items: center;
+}
+
+.historyName {
+  padding-top: 1vh;
+  text-align: center;
+}
+
+.historyName span {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--textHover);
+}
+
+.historySlide {
+  background-color: var(--background2);
+  border-radius: 28px;
+  padding: 2vh 1vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.historySlide:hover {
+  border: 1px solid var(--borderHover);
+}
+
+.photoHistoryWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60%;
+}
+
+.photoHistory {
+  padding: 1vh 1vw;
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: cover;
+}
+
+.nameHistory {
+  font-size: 18px;
+  border-bottom: 1px solid #2d2d2d;
+  color: var(--textHover);
+  text-align: center;
+  min-height: 25%;
+}
+
+.PriceAndRateHistory {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 1vh 0;
+}
+
+.rateHistory {
+  display: flex;
+  align-items: baseline;
+}
+
+.rateHistory span {
+  font-size: 18px;
+}
+
+.priceHistory {
+  color: var(--text);
+  font-size: 20px;
+}
+
+.priceHistory span {
+  color: var(--text);
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .historyWraper {
+    padding: 0 4vw 0;
+  }
+  .nameHistory {
+    font-size: 12px;
+  }
+  .priceHistory {
+    color: var(--text);
+    font-size: 14px;
+  }
+  .priceHistory span {
+    font-size: 14px;
+  }
+  .rateHistory span {
+    font-size: 14px;
+  }
+  .PriceAndRateHistory {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .historyWraper {
+    padding: 0 4vw 0;
+  }
+  .priceHistory {
+    color: var(--text);
+    font-size: 18px;
+  }
+  .priceHistory span {
+    font-size: 18px;
+  }
+  .PriceAndRateHistory {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .historyWraper {
+    padding: 0 4vw 0;
+  }
+  .priceHistory {
+    color: var(--text);
+    font-size: 18px;
+  }
+  .priceHistory span {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .historyWraper {
+    padding: 0 8vw 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .historyWraper {
+    padding: 0 13.5vw 0;
+  }
+  .priceHistory {
+    color: var(--text);
+    font-size: 16px;
+  }
+  .priceHistory span {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .historyWraper {
+    padding: 0 13.5vw 0;
+  }
+}

@@ -1,0 +1,133 @@
+.LoginModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.active {
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginModalContent {
+  overflow: hidden;
+  cursor: default;
+  width: 30vw;
+  background-color: var(--background2);
+  padding: 3vh 0;
+  border-radius: 28px;
+  border: 1px solid rgba(204, 251, 241, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nameOfInput {
+  color: var(--whiteTeal);
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+.nameOfForm {
+  text-align: center;
+  color: var(--whiteTeal);
+  font-size: 32px;
+  padding: 0 0 3vh 0;
+}
+
+.buttonForm {
+  margin-top: 0.3vh;
+  width: 100%;
+  padding: 1vh 1vw;
+  border-radius: 28px;
+  border: 1px solid var(--border);
+  background-color: var(--background2);
+  transition: 0.2s ease-in-out;
+  color: var(--text);
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.buttonForm:hover {
+  opacity: 1;
+  border-color: var(--borderHover);
+}
+
+.buttonLogin:hover {
+  border: 1px solid var(--borderHover);
+  color: var(--textHover);
+  opacity: 1;
+}
+
+.loginForm {
+  width: 90%;
+  height: 65%;
+  padding: 0 2vw;
+}
+
+.downBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5vh;
+}
+
+.downBlock span {
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.downBlock p {
+  font-size: 20px;
+  border-bottom: 1px solid var(--borderHover);
+  cursor: pointer;
+}
+
+.errorSpan {
+  font-size: 14px;
+  color: red;
+}
+
+@media only screen and (max-width: 601px) {
+  .LoginModalContent {
+    width: 90vw;
+  }
+  .nameOfForm {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .LoginModalContent {
+    width: 90vw;
+  }
+  .nameOfForm {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .LoginModalContent {
+    width: 70vw;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .LoginModalContent {
+    width: 60vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  .LoginModalContent {
+    width: 60vw;
+  }
+}

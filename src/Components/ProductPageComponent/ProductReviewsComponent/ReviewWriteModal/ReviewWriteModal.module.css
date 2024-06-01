@@ -1,0 +1,120 @@
+.writeReviewModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.active {
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviewModalContent {
+  overflow: auto;
+  cursor: default;
+  background-color: var(--background2);
+  width: 30vw;
+  padding: 3vh 4vw;
+  border-radius: 28px;
+  border: 1px solid rgba(204, 251, 241, 0.3);
+  display: flex;
+  flex-direction: column;
+  max-height: 60vh;
+}
+
+.reviewUserText,
+.reviewNameProduct {
+  text-align: center;
+  font-size: 24px;
+  padding-bottom: 5px;
+}
+
+.reviewNameProduct {
+  font-size: 20px;
+  color: var(--textHover);
+  padding-bottom: 3vh;
+}
+
+.labelRate {
+  color: var(--text);
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.addReviewButton {
+  margin-top: 0.3vh;
+  width: 100%;
+  font-size: 18px;
+  padding: 1vh 1vw;
+  border-radius: 28px;
+  border: 1px solid var(--border);
+  background-color: var(--background2);
+  transition: 0.2s ease-in-out;
+  color: var(--text);
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.addReviewButton:hover {
+  opacity: 1;
+  border-color: var(--borderHover);
+}
+
+@media only screen and (max-width: 601px) {
+  .reviewModalContent {
+    width: 75vw;
+  }
+  .reviewUserText,
+  .reviewNameProduct {
+    font-size: 16px;
+  }
+  .labelRate {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .reviewModalContent {
+    width: 75vw;
+  }
+  .reviewUserText,
+  .reviewNameProduct {
+    font-size: 16px;
+  }
+  .labelRate {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .reviewModalContent {
+    width: 50vw;
+  }
+  .reviewUserText,
+  .reviewNameProduct {
+    font-size: 18px;
+  }
+  .labelRate {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .reviewModalContent {
+    width: 50vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  .reviewModalContent {
+    width: 40vw;
+  }
+}

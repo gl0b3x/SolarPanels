@@ -1,0 +1,422 @@
+.OrderDetailedWrapper {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.orderBlock {
+    background-color: var(--background);
+    border: 1px solid #2d2d2d;
+    border-radius: 28px;
+    padding: 4vh 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 70vh;
+    margin-bottom: 4vh;
+}
+
+.leftBlock {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.title {
+    font-size: 24px;
+    color: var(--textHover);
+    text-align: center;
+}
+
+.orderFilling {
+    margin-top: 2vh;
+    padding: 2vh 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    max-height: 60vh;
+    overflow: auto;
+}
+
+.productInOrder {
+    border-bottom: 1px solid #2d2d2d;
+    border-top: 1px solid #2d2d2d;
+    padding: 2vh 1vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.photoProduct {
+    width: 10%;
+}
+
+.nameProduct {
+    font-size: 18px;
+    font-weight: bold;
+    width: 35%;
+    margin-left: 0.5vw;
+}
+
+.servicesBlock {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #2d2d2d;
+    padding: 1vh 1vw;
+    margin-left: auto;
+}
+
+    .servicesBlock span {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.1vh 0;
+}
+
+.servicePrice {
+    color: var(--textHover);
+    margin-left: 1vw;
+}
+
+.servicePrice span {
+    color: var(--text);
+}
+
+.productPrice {
+    color: var(--textHover);
+    margin-left: auto;
+    font-size: 18px;
+}
+
+.productPrice span {
+    color: var(--text);
+}
+
+.statusFilling {
+    margin-top: 2vh;
+    padding: 2vh 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.totalPriceOrder {
+    font-size: 20px;
+    padding: 1vh 1vw 0;
+    border-top: 1px solid #2d2d2d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.totalPriceText {
+    color: var(--text);
+}
+
+.totalPriceText span {
+    color: var(--textHover);
+}
+
+.rightBlock {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeDelivery {
+    border-bottom: 1px solid #2d2d2d;
+    border-top: 1px solid #2d2d2d;
+    padding: 2vh 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.timeDelivery p {
+    font-size: 20px;
+    color: var(--text);
+}
+
+.timeDelivery p span {
+    color: var(--textHover);
+}
+
+.statusOrder {
+    border-top: 1px #2d2d2d solid;
+    border-bottom: 1px #2d2d2d solid;
+    padding: 2vh 0;
+    text-align: center;
+}
+
+.deliveryDetails {
+    border-top: 1px #2d2d2d solid;
+    border-bottom: 1px #2d2d2d solid;
+    padding: 2vh 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.deliveryDetails p {
+    font-size: 20px;
+}
+
+.deliveryDetails p span {
+    color: var(--textHover)
+}
+
+@media only screen and (max-width: 601px) {
+    .OrderDetailedWrapper {
+        padding: 1vh 4vw;
+    }
+    .orderBlock {
+        flex-direction: column;
+    }
+    .leftBlock {
+        width: 100%;
+        border-bottom: 1px solid #2d2d2d;
+        padding-bottom: 2vh;
+        margin-bottom: 2vh;
+    }
+    .productInOrder {
+        padding: 1vh 0;
+    }
+    .title {
+       font-size: 18px;
+    }
+    .rightBlock {
+        width: 100%;
+    }
+   .photoProduct {
+       width: 15%;
+   }
+   .nameProduct {
+       font-size: 12px;
+       width: 20%;
+   }
+   .servicesBlock {
+       padding: 1vh 0.5vw;
+       width: 40%;
+   }
+   .servicesBlock span {
+       font-size: 12px;
+   }
+   .servicePrice {
+       font-size: 12px;
+   }
+   .productPrice {
+       font-size: 12px;
+   }
+   .totalPriceOrder {
+       flex-direction: column;
+       text-align: center;
+   }
+   .totalPriceText {
+       font-size: 14px;
+   }
+   .timeDelivery p {
+       font-size: 14px;
+   }
+   .deliveryDetails p {
+       font-size: 14px;
+   }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+    .OrderDetailedWrapper {
+        padding: 1vh 4vw;
+    }
+    .orderBlock {
+        flex-direction: column;
+    }
+    .leftBlock {
+        width: 100%;
+        border-bottom: 1px solid #2d2d2d;
+        padding-bottom: 2vh;
+        margin-bottom: 2vh;
+    }
+    .productInOrder {
+        padding: 1vh 0;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .rightBlock {
+        width: 100%;
+    }
+    .photoProduct {
+        width: 15%;
+    }
+    .nameProduct {
+        font-size: 14px;
+        width: 20%;
+    }
+    .servicesBlock {
+        padding: 1vh 0.5vw;
+        width: 40%;
+    }
+    .servicesBlock span {
+        font-size: 14px;
+    }
+    .servicePrice {
+        font-size: 14px;
+    }
+    .productPrice {
+        font-size: 16px;
+    }
+    .totalPriceOrder {
+        flex-direction: column;
+        text-align: center;
+    }
+    .totalPriceText {
+        font-size: 18px;
+    }
+    .timeDelivery p {
+        font-size: 16px;
+    }
+    .deliveryDetails p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .OrderDetailedWrapper {
+        padding: 1vh 4vw;
+    }
+    .orderBlock {
+        flex-direction: column;
+    }
+    .leftBlock {
+        width: 100%;
+        border-bottom: 1px solid #2d2d2d;
+        padding-bottom: 2vh;
+        margin-bottom: 2vh;
+    }
+    .productInOrder {
+        padding: 1vh 0;
+    }
+    .title {
+        font-size: 22px;
+    }
+    .rightBlock {
+        width: 100%;
+    }
+    .photoProduct {
+        width: 15%;
+    }
+    .nameProduct {
+        font-size: 16px;
+        width: 20%;
+    }
+    .servicesBlock {
+        padding: 1vh 0.5vw;
+        width: 40%;
+    }
+    .servicesBlock span {
+        font-size: 16px;
+    }
+    .servicePrice {
+        font-size: 16px;
+    }
+    .productPrice {
+        font-size: 18px;
+    }
+    .totalPriceText {
+        font-size: 20px;
+    }
+    .timeDelivery p {
+        font-size: 18px;
+    }
+    .deliveryDetails p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .OrderDetailedWrapper {
+        padding: 1vh 4vw;
+    }
+    .productInOrder {
+        padding: 1vh 0;
+    }
+    .title {
+        font-size: 22px;
+    }
+    .photoProduct {
+        width: 15%;
+    }
+    .nameProduct {
+        font-size: 16px;
+        width: 20%;
+    }
+    .servicesBlock {
+        padding: 1vh 0.5vw;
+        width: 40%;
+    }
+    .servicesBlock span {
+        font-size: 16px;
+    }
+    .servicePrice {
+        font-size: 16px;
+    }
+    .productPrice {
+        font-size: 18px;
+    }
+    .totalPriceText {
+        font-size: 18px;
+    }
+    .timeDelivery p {
+        font-size: 16px;
+    }
+    .deliveryDetails p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+    .OrderDetailedWrapper {
+        padding: 1vh 8vw;
+    }
+    .nameProduct {
+        font-size: 18px;
+        width: 25%;
+    }
+    .servicesBlock {
+        padding: 1vh 0.5vw;
+        width: 40%;
+    }
+    .servicesBlock span {
+        font-size: 16px;
+    }
+    .servicePrice {
+        font-size: 16px;
+    }
+    .productPrice {
+        font-size: 18px;
+    }
+    .totalPriceText {
+        font-size: 20px;
+    }
+    .timeDelivery p {
+        font-size: 18px;
+    }
+    .deliveryDetails p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .OrderDetailedWrapper {
+        padding: 1vh 13.5vw;
+    }
+    .nameProduct {
+        font-size: 18px;
+        width: 25%;
+    }
+    .servicesBlock {
+        padding: 1vh 0.5vw;
+        width: 40%;
+    }
+}

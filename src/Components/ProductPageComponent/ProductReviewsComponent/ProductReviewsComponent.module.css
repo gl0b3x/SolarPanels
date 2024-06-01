@@ -1,0 +1,173 @@
+.reviewsWrapper {
+  padding: 2vh 1vw;
+  width: 100%;
+  height: 90%;
+}
+
+.reviewsBlockUpper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reviewBlock {
+  padding: 1vh 1vw;
+  margin-bottom: 2vh;
+  border: 1px solid #2d2d2d;
+  border-radius: 28px;
+}
+
+.commentsWrapper {
+  overflow: auto;
+  overflow-x: hidden;
+  height: 85%;
+}
+
+.reviewBlockQuantity {
+  display: flex;
+  align-items: baseline;
+  font-size: 16px;
+  padding: 2vh 1vw;
+}
+
+.reviewBlockQuantity span {
+  font-size: 16px;
+}
+
+.reviewUpperBlock {
+  padding: 1vh 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #2d2d2d;
+}
+
+.reviewDateAndRating {
+  display: flex;
+  align-items: baseline;
+}
+
+.reviewRating {
+  display: flex;
+  align-items: baseline;
+}
+
+.reviewDate {
+  margin-left: 0.5vw;
+  font-size: 16px;
+  opacity: 0.7;
+  color: var(--textHover);
+}
+
+.reviewBlockName {
+  font-size: 18px;
+  color: var(--textHover);
+}
+
+.reviewText {
+  padding: 1vh 0;
+  color: var(--text);
+}
+
+.reviewText span {
+  color: var(--textHover);
+  opacity: 0.7;
+  font-size: 18px;
+}
+
+.reviewText p {
+  color: var(--textHover);
+  padding-top: 2vh;
+  opacity: 1;
+  font-size: 20px;
+}
+
+.reviewsBlockDown {
+  display: flex;
+  justify-content: center;
+  padding: 1vh 0;
+  border-top: 3px solid #2d2d2d;
+}
+
+.addReview {
+  margin-top: 0.3vh;
+  width: 30%;
+  font-size: 18px;
+  padding: 1vh 1vw;
+  border-radius: 28px;
+  border: 1px solid var(--border);
+  background-color: var(--background2);
+  transition: 0.2s ease-in-out;
+  color: var(--text);
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.addReview:hover {
+  opacity: 1;
+  border-color: var(--borderHover);
+}
+
+@media only screen and (max-width: 600px) {
+  .reviewBlockQuantity {
+    font-size: 14px;
+  }
+  .reviewBlockQuantity span {
+    font-size: 14px;
+  }
+  .reviewBlockName {
+    font-size: 16px;
+    padding: 0 2vw;
+  }
+  .reviewText span {
+    padding: 0 2vw;
+    font-size: 14px;
+  }
+  .reviewText p {
+    padding: 2vh 2vw;
+    font-size: 16px;
+  }
+  .reviewRating span {
+    font-size: 16px;
+  }
+  .reviewDate {
+    font-size: 16px;
+    padding: 0 2vw 0 0;
+  }
+  .addReview {
+    width: 50%;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .reviewBlockQuantity {
+    font-size: 14px;
+  }
+  .reviewBlockQuantity span {
+    font-size: 14px;
+  }
+  .reviewBlockName {
+    font-size: 16px;
+    padding: 0 2vw;
+  }
+  .reviewText span {
+    padding: 0 2vw;
+    font-size: 14px;
+  }
+  .reviewText p {
+    padding: 2vh 2vw;
+    font-size: 16px;
+  }
+  .reviewRating span {
+    font-size: 16px;
+  }
+  .reviewDate {
+    font-size: 16px;
+    padding: 0 2vw 0 0;
+  }
+  .addReview {
+    width: 50%;
+    font-size: 16px;
+  }
+}

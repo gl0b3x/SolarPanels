@@ -1,0 +1,327 @@
+.aboutWrap {
+    background-color: var(--background);
+    color: var(--textHover);
+    overflow: hidden;
+}
+
+.aboutWrap h1 {
+    font-size: 32px;
+    text-align: center;
+    padding: 2vh 0;
+    border-bottom: 1px solid #2d2d2d;
+}
+
+.columnWrapper {
+    padding: 2vh 0;
+    display: flex;
+}
+
+.leftColumn {
+    animation: slideInFromLeft 1.5s ease;
+    width: 60%;
+}
+
+.leftColumn h2 {
+    padding: 2vh 0;
+    font-size: 48px;
+    line-height: 5vh;
+    width: 70%;
+}
+
+.leftColumn h2 span {
+    font-size: 48px;
+    color: var(--border);
+}
+
+.leftColumn p {
+    width: 70%;
+    color: var(--text);
+    font-size: 24px;
+}
+
+.rightColumn {
+    animation: slideInFromRight 1.5s ease;
+    width: 40%;
+}
+
+.rightColumn img {
+    width: 100%;
+    border-radius: 28px;
+}
+
+.statisticWrapper {
+    border-bottom: 1px solid #2d2d2d;
+    padding: 5vh 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.leftStatisticBlock, .rightStatisticBlock {
+    border-left: 5px solid var(--textHover);
+}
+
+.leftStatisticBlock span, .rightStatisticBlock span {
+    font-weight: bold;
+    padding: 0 1vw;
+    font-size: 48px;
+}
+
+.leftStatisticBlock p, .rightStatisticBlock p {
+    padding: 0 1vw;
+    font-size: 16px;
+}
+
+.leftStatisticBlock {
+    animation: slideInFromLeft 1.5s ease;
+}
+
+.rightStatisticBlock {
+    animation: slideInFromRight 1.5s ease;
+}
+
+.whyUsWrapper {
+    border-bottom: 1px solid #2d2d2d;
+    padding: 5vh 0;
+}
+
+.whyUsWrapper h2 {
+    text-align: center;
+    padding-bottom: 5vh;
+    font-size: 32px;
+}
+
+.whyUsInfo {
+    padding-top: 5vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5vw;
+}
+
+.whyUsInfo span {
+    font-weight: bold;
+    font-size: 32px;
+    padding: 4vh 0;
+    color: var(--border);
+}
+
+.whyUsInfo p {
+    font-size: 18px;
+    padding: 4vh 0;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .aboutWrap {
+        padding: 2vh 4vw;
+    }
+    .columnWrapper {
+        padding: 2vh 0;
+        flex-direction: column;
+    }
+    .aboutWrap h1 {
+        font-size: 28px;
+    }
+    .leftColumn, .rightColumn {
+        width: 100%;
+    }
+    .leftColumn h2 {
+        font-size: 26px;
+        line-height: 5vh;
+        width: 100%;
+    }
+    .leftColumn h2 span {
+        font-size: 26px;
+        color: var(--border);
+    }
+    .leftColumn p {
+        font-size: 18px;
+    }
+    .rightColumn {
+        padding: 4vh 0;
+    }
+    .statisticWrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 5vh;
+    }
+    .whyUsInfo {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .whyUsInfo span {
+        padding: 0;
+        border-bottom: 1px solid #2d2d2d;
+    }
+    .whyUsInfo p {
+        padding: 2vh 0;
+    }
+    .leftStatisticBlock span, .rightStatisticBlock span {
+        font-size: 30px;
+    }
+    .leftStatisticBlock p, .rightStatisticBlock p {
+        font-size: 20px;
+    }
+    .whyUsWrapper h2 {
+        padding: 0;
+        font-size: 28px;
+    }
+    .whyBlock span {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+    .aboutWrap {
+        padding: 2vh 4vw;
+    }
+    .columnWrapper {
+        padding: 2vh 0;
+        flex-direction: column;
+    }
+    .leftColumn, .rightColumn {
+        width: 100%;
+    }
+    .leftColumn h2 {
+        font-size: 32px;
+        line-height: 5vh;
+        width: 100%;
+    }
+    .leftColumn h2 span {
+        font-size: 32px;
+        color: var(--border);
+    }
+    .leftColumn p {
+        width: 100%;
+        color: var(--text);
+        font-size: 18px;
+    }
+    .rightColumn {
+        padding: 4vh 0;
+    }
+    .statisticWrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 5vh;
+    }
+    .whyUsInfo {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .whyBlock span {
+        padding: 0;
+        border-bottom: 1px solid #2d2d2d;
+    }
+    .whyBlock p {
+        padding: 2vh 0;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .aboutWrap {
+        padding: 2vh 4vw;
+    }
+    .columnWrapper {
+        padding: 2vh 0;
+        flex-direction: column;
+    }
+    .leftColumn, .rightColumn {
+        width: 100%;
+    }
+    .leftColumn h2 {
+        font-size: 32px;
+        line-height: 5vh;
+        width: 100%;
+    }
+    .leftColumn h2 span {
+        font-size: 32px;
+        color: var(--border);
+    }
+    .leftColumn p {
+        width: 100%;
+        color: var(--text);
+        font-size: 18px;
+    }
+    .rightColumn {
+        padding: 4vh 0;
+    }
+    .statisticWrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 5vh;
+    }
+    .whyUsInfo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .whyBlock span {
+        padding: 0;
+        border-bottom: 1px solid #2d2d2d;
+    }
+    .whyBlock p {
+        padding: 2vh 0;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .aboutWrap {
+        padding: 3vh 8vw;
+    }
+    .columnWrapper {
+        padding: 2vh 0;
+        flex-direction: column;
+    }
+    .leftColumn, .rightColumn {
+        width: 100%;
+    }
+    .leftColumn h2 {
+        font-size: 32px;
+        line-height: 5vh;
+        width: 100%;
+    }
+    .leftColumn h2 span {
+        font-size: 32px;
+        color: var(--border);
+    }
+    .leftColumn p {
+        width: 100%;
+        color: var(--text);
+        font-size: 18px;
+    }
+    .rightColumn {
+        padding: 4vh 0;
+    }
+    .statisticWrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 5vh;
+    }
+    .whyUsInfo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .whyBlock span {
+        padding: 0;
+        border-bottom: 1px solid #2d2d2d;
+    }
+    .whyBlock p {
+        padding: 2vh 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .aboutWrap {
+        padding: 3vh 13.5vw;
+    }
+    .columnWrapper {
+        padding: 6vh 0;
+    }
+}

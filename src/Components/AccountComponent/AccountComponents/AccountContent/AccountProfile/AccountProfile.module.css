@@ -1,0 +1,227 @@
+.leftBlock {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 5vw;
+  justify-content: center;
+}
+
+.NameOfForm {
+  font-size: 24px;
+  color: var(--textHover);
+}
+
+.loginForm p {
+  font-size: 16px;
+  color: var(--textHover);
+}
+
+.loginForm {
+  width: 80%;
+}
+
+.buttonAdd {
+  margin-top: 0.3vh;
+  width: 100%;
+  padding: 1vh 1vw;
+  border-radius: 28px;
+  border: 1px solid var(--border);
+  background-color: var(--background2);
+  transition: 0.2s ease-in-out;
+  color: var(--text);
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.buttonAdd:hover {
+  border: 1px solid var(--borderHover);
+  color: var(--textHover);
+  opacity: 1;
+}
+
+.rightBlock {
+  width: 50%;
+}
+
+.titleBonuses {
+  text-align: center;
+  font-size: 24px;
+  padding-bottom: 2vh;
+}
+
+.bonusesWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+
+.bonuses {
+  border: 1px solid #2d2d2d;
+  border-radius: 14px;
+  width: 40%;
+  height: 30%;
+  padding: 2vh 2vw;
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.1),
+    0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bonuses span {
+  font-size: 20px;
+  color: var(--textHover);
+}
+
+.bonuses p {
+  margin-top: 1vh;
+  display: flex;
+  align-items: center;
+}
+
+.bonuses p span {
+  font-weight: bold;
+  font-size: 24px;
+  margin-left: 0.2vw;
+  color: var(--text);
+}
+
+.rulesBonuses {
+  margin-top: 4vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rulesBonuses div {
+  font-size: 20px;
+  color: var(--textHover);
+  margin-bottom: 2vh;
+}
+
+.rulesBonuses ul {
+  list-style-type: none;
+  width: 80%;
+}
+
+.rulesBonuses li {
+  padding: 1vh 0;
+  border-bottom: 1px solid #2d2d2d;
+  font-size: 18px;
+  color: var(--text);
+}
+
+@media only screen and (max-width: 601px) {
+  .AccountProfileWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 0;
+  }
+  .NameOfForm {
+    margin-bottom: 3vh;
+    font-size: 20px;
+  }
+  .leftBlock {
+    width: 100%;
+  }
+  .rightBlock {
+    width: 100%;
+  }
+  .bonuses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bonuses span {
+    font-size: 16px;
+  }
+  .bonuses p span {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .AccountProfileWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 0;
+  }
+  .leftBlock {
+    width: 100%;
+  }
+  .rightBlock {
+    width: 100%;
+  }
+  .bonuses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bonuses p span {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .AccountProfileWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 0;
+  }
+  .leftBlock {
+    width: 100%;
+  }
+  .rightBlock {
+    width: 100%;
+  }
+  .bonuses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .AccountProfileWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 2vh 0;
+  }
+  .bonuses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  .AccountProfileWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 2vh 0;
+  }
+  .bonuses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .AccountProfileWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 2vh 0;
+  }
+  .bonuses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

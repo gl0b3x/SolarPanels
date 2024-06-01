@@ -1,0 +1,283 @@
+.headerDown {
+  width: 100%;
+  height: 8vh;
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #2d2d2d;
+  position: sticky;
+  top: 0;
+  z-index: 998;
+  padding: 0 13.5vw;
+}
+
+.headerSearch {
+  background-color: var(--background2);
+  border: 1px solid #2d2d2d;
+  position: absolute;
+  left: 50%;
+  width: 50vw;
+  height: 5vh;
+  transform: translateX(-50%);
+  overflow: hidden;
+  padding: 2.5vh 1vw;
+  border-radius: 18px;
+  color: var(--textHover);
+}
+
+.activeHeaderSearch {
+  height: 7.5vh;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  padding-left: 2vw;
+  font-size: 24px;
+  border: none;
+  color: var(--textHover);
+}
+
+.headerSearch::placeholder {
+  color: var(--text);
+}
+
+.catalog {
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: var(--background2);
+  height: 2vh;
+  padding: 2.5vh 1vw;
+  border-radius: 18px;
+  border: 1px solid #2d2d2d;
+}
+
+.catalog svg {
+  fill: var(--textHover);
+}
+
+.catalog span {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--textHover);
+  margin-left: 0.2vw;
+}
+
+.catalog:hover {
+  background-color: var(--background);
+  border: 1px solid var(--borderHover);
+}
+
+.userButton {
+  background-color: var(--background2);
+  cursor: pointer;
+  display: flex;
+  padding: 16px 16px;
+  border-radius: 18px;
+  margin-left: auto;
+  border: 1px solid #2d2d2d;
+}
+
+.userButton svg {
+  color: var(--textHover);
+  font-size: 16px;
+}
+
+.userButton:hover {
+  border: 1px solid var(--borderHover);
+}
+
+.headerBasket {
+  cursor: pointer;
+  display: flex;
+  padding: 16px 16px;
+  border-radius: 18px;
+  margin-left: 1vw;
+  border: 1px solid #2d2d2d;
+  background-color: var(--background2);
+}
+
+.headerBasket span {
+  font-size: 16px;
+}
+
+.headerBasket div {
+  color: var(--textHover);
+  font-size: 18px;
+}
+
+.headerBasket:hover {
+  border: 1px solid var(--borderHover);
+}
+
+.resultSearch {
+  position: absolute;
+  top: calc(8vh);
+  width: 50vw;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 998;
+  background-color: var(--background);
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  min-height: 10vh;
+  color: var(--text);
+  padding: 2vh 1vw;
+  font-size: 24px;
+  max-height: 50vh;
+  overflow: auto;
+  border-bottom: 1px solid var(--text);
+}
+
+.nothingFound {
+  padding-top: 4vh;
+  font-size: 24px;
+}
+
+.searchProductResult {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  padding: 1vh 0;
+  opacity: 0.85;
+}
+
+.searchProductResult:hover {
+  border-radius: 8px;
+  background-color: var(--background2);
+  opacity: 1;
+}
+
+.searchProductResult:hover div span {
+  color: var(--textHover);
+}
+
+.searchProductImage {
+  width: 4vw;
+}
+
+.searchProductInfo {
+  width: 100%;
+  padding-inline: 1vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.searchProductName {
+  color: var(--textHover);
+  padding: 1vh 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 18px;
+}
+
+.searchProductPrice {
+  color: var(--textHover);
+  padding-top: 1vh;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 767px) {
+  .headerDown {
+    padding: 0 4vw;
+  }
+  .catalog {
+    padding: 2vh 3vw;
+  }
+  .catalog span {
+    display: none;
+  }
+  .headerBasket {
+    padding: 1vh 3vw;
+  }
+  .headerSearch {
+    width: 50%;
+    left: 45%;
+  }
+  .userButton {
+    padding: 1vh 3vw;
+  }
+  .headerSearch:focus {
+    height: 7.5vh;
+  }
+  .resultSearch {
+    left: 45%;
+    width: 50%;
+  }
+  .searchProductResult {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .searchProductImage {
+    width: 30%;
+  }
+  .searchProductName {
+    font-size: 16px;
+    text-align: center;
+  }
+  .searchProductPrice {
+    font-size: 16px;
+    text-align: center;
+  }
+  .headerSearch {
+    font-size: 18px;
+  }
+  .nothingFound {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .headerDown {
+    padding: 0 4vw;
+  }
+  .catalog {
+    padding: 2vh 2vw;
+  }
+  .catalog span {
+    font-size: 16px;
+  }
+  .headerBasket {
+    padding: 1vh 3vw;
+  }
+  .headerSearch {
+    width: 50%;
+    left: 45%;
+  }
+  .userButton {
+    padding: 1vh 3vw;
+  }
+  .headerSearch:focus {
+    height: 7.5vh;
+  }
+  .resultSearch {
+    left: 45%;
+    width: 50%;
+  }
+  .searchProductImage {
+    width: 20%;
+  }
+  .headerSearch {
+    font-size: 20px;
+  }
+  .nothingFound {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .headerDown {
+    padding: 0 8vw;
+  }
+  .headerSearch {
+    width: 60%;
+  }
+  .headerSearch:focus {
+    height: 7.5vh;
+  }
+  .resultSearch {
+    width: 60%;
+  }
+  .searchProductImage {
+    width: 10%;
+  }
+}

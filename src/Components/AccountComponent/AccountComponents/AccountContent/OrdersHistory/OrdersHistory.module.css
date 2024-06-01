@@ -1,0 +1,285 @@
+.ordersWrapper {
+  width: 100%;
+  height: 60vh;
+  overflow-y: scroll;
+  padding: 2vh 2vw;
+}
+
+.order {
+  border: 1px solid #2d2d2d;
+  border-radius: 18px;
+  padding: 2vh 2vw;
+  margin-bottom: 2vh;
+}
+
+.order a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.title {
+  font-size: 24px;
+  text-align: center;
+  color: var(--textHover)
+}
+
+.headerOrder {
+  border-bottom: 1px solid #2d2d2d;
+  display: flex;
+  flex-direction: row;
+  padding: 1vh 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.numberOrder {
+  font-size: 22px;
+  color: var(--text);
+}
+
+.numberOrder span {
+  color: var(--textHover);
+}
+
+.statusOrder {
+  font-size: 22px;
+  color: var(--text);
+}
+
+.statusOrder span {
+  color: var(--textHover);
+}
+
+.productInOrder {
+  border-bottom: 1px solid #2d2d2d;
+  padding: 2vh 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.photoProduct {
+  width: 5%;
+}
+.nameProduct {
+  font-size: 20px;
+  width: 40%;
+  font-weight: bold;
+}
+
+.servicesBlock {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #2d2d2d;
+  padding: 1vh 1vw;
+}
+
+.servicesBlock span {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.1vh 0;
+}
+
+.servicePrice {
+  color: var(--textHover);
+  margin-left: 1vw;
+}
+
+.servicePrice span {
+  color: var(--text);
+}
+
+.productPrice {
+  color: var(--textHover);
+  margin-left: auto;
+  font-size: 20px;
+}
+
+.productPrice span {
+  color: var(--text);
+}
+
+.footerOrder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1vh 0 2vh;
+}
+
+.time,
+.orderTotalPrice {
+  font-size: 22px;
+  color: var(--text);
+}
+
+.time span,
+.orderTotalPrice span {
+  color: var(--textHover);
+}
+
+@media only screen and (max-width: 601px) {
+  .headerOrder {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .photoProduct {
+    width: 10%;
+  }
+  .servicesBlock {
+    width: 40%;
+  }
+  .numberOrder {
+    font-size: 14px;
+  }
+  .statusOrder {
+    font-size: 14px;
+  }
+  .nameProduct {
+    font-size: 12px;
+    width: 30%;
+  }
+  .servicesBlock span {
+    font-size: 10px;
+  }
+  .servicesBlock {
+    padding: 0.5vh 0.5vw;
+    width: 35%;
+    margin-left: auto;
+  }
+  .productPrice {
+    font-size: 12px;
+  }
+  .time {
+    font-size: 14px;
+  }
+  .orderTotalPrice {
+    font-size: 14px;
+  }
+  .footerOrder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .numberOrder {
+    font-size: 18px;
+  }
+  .statusOrder {
+    font-size: 18px;
+  }
+  .nameProduct {
+    font-size: 16px;
+    width: 30%;
+  }
+  .photoProduct {
+    width: 10%;
+  }
+  .servicesBlock span {
+    font-size: 14px;
+  }
+  .productPrice {
+    font-size: 18px;
+  }
+  .time {
+    font-size: 18px;
+  }
+  .orderTotalPrice {
+    font-size: 18px;
+  }
+  .title {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .numberOrder {
+    font-size: 20px;
+  }
+  .statusOrder {
+    font-size: 20px;
+  }
+  .nameProduct {
+    font-size: 20px;
+    width: 30%;
+  }
+  .photoProduct {
+    width: 10%;
+  }
+  .servicesBlock span {
+    font-size: 16px;
+  }
+  .productPrice {
+    font-size: 20px;
+  }
+  .time {
+    font-size: 20px;
+  }
+  .orderTotalPrice {
+    font-size: 20px;
+  }
+  .title {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .numberOrder {
+    font-size: 20px;
+  }
+  .statusOrder {
+    font-size: 20px;
+  }
+  .nameProduct {
+    font-size: 20px;
+    width: 30%;
+  }
+  .photoProduct {
+    width: 7%;
+  }
+  .servicesBlock span {
+    font-size: 16px;
+  }
+  .productPrice {
+    font-size: 20px;
+  }
+  .time {
+    font-size: 20px;
+  }
+  .orderTotalPrice {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  .numberOrder {
+    font-size: 20px;
+  }
+  .statusOrder {
+    font-size: 20px;
+  }
+  .nameProduct {
+    font-size: 20px;
+    width: 30%;
+  }
+  .servicesBlock span {
+    font-size: 16px;
+  }
+  .productPrice {
+    font-size: 20px;
+  }
+  .time {
+    font-size: 20px;
+  }
+  .orderTotalPrice {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+}

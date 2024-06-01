@@ -1,0 +1,56 @@
+.accountWrapper {
+  background-color: var(--background);
+  width: 100%;
+  color: var(--text);
+  padding: 2vh 13.5vw;
+  border-bottom: 1px solid #2d2d2d;
+}
+
+.accountBlock {
+  width: 100%;
+  min-height: 50vh;
+  background-color: var(--background2);
+  border-radius: 28px;
+}
+
+@media only screen and (max-width: 350px) {
+  .accountWrapper {
+    padding: 2vh 4vw;
+  }
+}
+
+@media only screen and (min-width: 351px) and (max-width: 600px) {
+  .accountWrapper {
+    padding: 2vh 4vw;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .accountWrapper {
+    padding: 2vh 4vw;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .accountWrapper {
+    padding: 2vh 4vw;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .accountWrapper {
+    padding: 2vh 8vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  .accountWrapper {
+    padding: 2vh 13.5vw;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .accountWrapper {
+    padding: 2vh 13.5vw;
+  }
+}

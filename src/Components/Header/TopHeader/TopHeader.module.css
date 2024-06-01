@@ -1,0 +1,119 @@
+.headerUp {
+  width: 100%;
+  height: 12vh;
+  background-color: var(--background);
+  display: flex;
+  letter-spacing: 0.15vw;
+  padding: 0 13.5vw;
+  border-bottom: 1px solid #2d2d2d;
+  position: relative;
+}
+
+.headerButtons {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.headerButtons span:hover {
+  color: var(--textHover);
+}
+
+.headerButtons a {
+  text-decoration: none;
+}
+
+.headerLogo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.headerLogoText {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerLogoText span {
+  color: teal;
+  font-size: 32px;
+  margin-top: 1vh;
+}
+
+.headerLogoText p {
+  color: white;
+  opacity: 0.8;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  .headerUp {
+    padding: 0 4vw;
+  }
+  .headerLogoText span,
+  .headerLogoText p {
+    display: none;
+  }
+  .headerButtons span {
+    font-size: calc(2px + 2vw);
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .headerUp {
+    padding: 0 4vw;
+  }
+  .headerLogoText span,
+  .headerLogoText p {
+    display: none;
+  }
+  .headerButtons span {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .headerUp {
+    padding: 0 4vw;
+  }
+  .headerButtons span {
+    font-size: 16px;
+  }
+  .headerLogoText span {
+    font-size: 16px;
+  }
+  .headerLogoText p {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1249px) {
+  .headerUp {
+    padding: 0 8vw;
+  }
+  .headerButtons span {
+    font-size: 14px;
+  }
+  .headerLogoText span {
+    font-size: 24px;
+  }
+  .headerLogoText p {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .headerUp {
+    padding: 0 13.5vw;
+  }
+  .headerButtons span {
+    font-size: 16px;
+  }
+  .headerLogoText span {
+    font-size: 32px;
+  }
+  .headerLogoText p {
+    font-size: 15px;
+  }
+}

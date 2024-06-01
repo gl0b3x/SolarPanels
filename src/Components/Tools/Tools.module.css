@@ -1,0 +1,133 @@
+.scrollTopButton {
+  position: fixed;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+  z-index: 997;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scrollTopButton svg {
+  font-size: 38px;
+}
+
+.scrollTopButton:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(250%);
+}
+
+.telephoneButton {
+  position: fixed;
+  padding: 5px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 998;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.telephoneButton:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.telephoneButton svg {
+  font-size: 32px;
+}
+
+@media only screen and (max-width: 600px) {
+  .telephoneButton {
+    bottom: 30px;
+    right: 30px;
+    width: 48px;
+    height: 48px;
+  }
+  .scrollTopButton {
+    bottom: 93px;
+    right: 30px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .telephoneButton {
+    bottom: 30px;
+    right: 30px;
+    width: 64px;
+    height: 64px;
+    font-size: 12px;
+  }
+  .scrollTopButton {
+    bottom: 109px;
+    right: 30px;
+    width: 64px;
+    height: 64px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .telephoneButton {
+    bottom: 40px;
+    right: 40px;
+    width: 64px;
+    height: 64px;
+    font-size: 12px;
+  }
+  .scrollTopButton {
+    bottom: 124px;
+    right: 40px;
+    width: 64px;
+    height: 64px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .telephoneButton {
+    bottom: 50px;
+    right: 50px;
+    width: 64px;
+    height: 64px;
+  }
+  .scrollTopButton {
+    bottom: 139px;
+    right: 50px;
+    width: 64px;
+    height: 64px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .telephoneButton {
+    bottom: 50px;
+    right: 50px;
+    width: 72px;
+    height: 72px;
+  }
+  .scrollTopButton {
+    bottom: 147px;
+    right: 50px;
+    width: 72px;
+    height: 72px;
+  }
+}

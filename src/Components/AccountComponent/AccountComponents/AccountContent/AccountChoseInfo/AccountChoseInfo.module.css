@@ -1,0 +1,156 @@
+.choseInfo {
+  color: var(--text);
+  background-color: var(--background2);
+  padding: 2vh 2vw;
+  border-radius: 28px;
+  width: 100%;
+}
+
+.choseInfoUl {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.choseInfoItem {
+  text-align: center;
+  border-bottom: 1px solid #2d2d2d;
+  padding: 1vh 1vw;
+  display: inline-block;
+  color: var(--text);
+  cursor: pointer;
+  transition: color 0.3s ease;
+  opacity: 0.6;
+  font-weight: bold;
+}
+
+.exitClick {
+  text-align: center;
+  border-bottom: 1px solid var(--text);
+  padding: 1vh 1vw;
+  display: inline-block;
+  font-size: 18px;
+  color: var(--text);
+  cursor: pointer;
+  transition: color 0.3s ease;
+  opacity: 0.6;
+  font-weight: bold;
+}
+
+.exitClick svg {
+  font-size: 18px;
+}
+
+.exitClick:hover {
+  opacity: 1;
+}
+
+.choseInfoItem:hover {
+  color: var(--textHover);
+  opacity: 0.8;
+}
+
+.activeInfo {
+  color: var(--textHover);
+  opacity: 0.8;
+  border-bottom: 1px solid var(--borderHover);
+}
+
+@media only screen and (max-width: 350px) {
+  .choseInfoItem {
+    font-size: 12px;
+    width: calc(70% / 2);
+  }
+  .exitClick {
+    font-size: 12px;
+    width: 30%;
+  }
+  .exitClick svg {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 351px) and (max-width: 600px) {
+  .choseInfoItem {
+    font-size: 14px;
+    width: calc(70% / 2);
+  }
+  .exitClick {
+    font-size: 14px;
+    width: 30%;
+  }
+  .exitClick svg {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .choseInfoItem {
+    font-size: 18px;
+    width: calc(75% / 2);
+  }
+  .exitClick {
+    font-size: 18px;
+    width: 25%;
+  }
+  .exitClick svg {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .choseInfoItem {
+    font-size: 18px;
+    width: calc(75% / 2);
+  }
+  .exitClick {
+    font-size: 18px;
+    width: 25%;
+  }
+  .exitClick svg {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .choseInfoItem {
+    font-size: 18px;
+    width: calc(75% / 2);
+  }
+  .exitClick {
+    font-size: 18px;
+    width: 25%;
+  }
+  .exitClick svg {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  .choseInfoItem {
+    font-size: 20px;
+    width: calc(75% / 2);
+  }
+  .exitClick {
+    font-size: 20px;
+    width: 25%;
+  }
+  .exitClick svg {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .choseInfoItem {
+    font-size: 20px;
+    width: calc(80% / 2);
+  }
+  .exitClick {
+    font-size: 20px;
+    width: 20%;
+  }
+  .exitClick svg {
+    font-size: 20px;
+  }
+}

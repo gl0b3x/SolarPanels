@@ -1,0 +1,79 @@
+.productInfoWrapper {
+  padding: 2vh 1vw;
+  overflow: auto;
+  max-height: 90%;
+}
+
+.ratingInfo {
+  display: flex;
+  align-items: baseline;
+  font-size: 16px;
+  padding: 2vh 1vw;
+}
+
+.ratingInfo span {
+  font-size: 16px;
+}
+
+.productInfo {
+  padding: 0 1vw;
+}
+
+.productText {
+  font-size: 28px;
+  padding-bottom: 2vh;
+  color: var(--textHover);
+}
+
+.productText span {
+  font-size: 28px;
+  color: var(--text);
+}
+
+.singleInfoTech {
+  border-bottom: 2px dotted #2d2d2d;
+  padding: 1vh 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.singleInfoTech span {
+  font-size: 20px;
+  color: var(--textHover);
+}
+
+@media only screen and (max-width: 600px) {
+  .ratingInfo {
+    font-size: 14px;
+  }
+  .ratingInfo span {
+    font-size: 14px;
+  }
+  .productText {
+    font-size: 24px;
+  }
+  .productText span {
+    font-size: 24px;
+  }
+  .singleInfoTech span {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .ratingInfo {
+    font-size: 14px;
+  }
+  .ratingInfo span {
+    font-size: 14px;
+  }
+  .productText {
+    font-size: 24px;
+  }
+  .productText span {
+    font-size: 24px;
+  }
+  .singleInfoTech span {
+    font-size: 16px;
+  }
+}

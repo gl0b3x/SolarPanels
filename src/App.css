@@ -1,0 +1,229 @@
+:root {
+  --background: #101010;
+  --background2: #171717;
+  --border: #5680e9;
+  --borderHover: #84ceeb;
+  --whiteTeal: #ccfbf1;
+  --text: #84ceeb;
+  --textHover: #d2f4f5;
+  --swiper-pagination-bullet-inactive-color: var(--border);
+  --swiper-pagination-color: var(--borderHover);
+  --swiper-pagination-bullet-width: 32px;
+  --swiper-pagination-bullet-height: 4px;
+  --swiper-pagination-bullet-border-radius: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Chivo", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(87, 87, 87, 0.7);
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(16, 16, 16, 1);
+}
+
+a {
+  text-decoration: none;
+}
+
+.swiper-button-prev:after {
+  color: var(--whiteTeal);
+}
+
+.swiper-button-next:after {
+  color: var(--whiteTeal);
+}
+
+.swiper {
+  height: 65vh;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.wrapFaq {
+  background-color: var(--background);
+}
+
+.activePageHeader span {
+  white-space: nowrap;
+  cursor: pointer;
+  margin: 1vw;
+  padding: 1vh 1vw;
+  border-radius: 25px;
+  opacity: 0.7;
+  color: var(--textHover);
+}
+
+.notActivePageHeader span {
+  white-space: nowrap;
+  cursor: pointer;
+  margin: 1vw;
+  padding: 1vh 1vw;
+  border-radius: 25px;
+  opacity: 0.7;
+  color: var(--text);
+}
+
+.activePageFooter span {
+  color: var(--textHover);
+}
+
+.activePageFooter {
+  color: var(--textHover);
+  opacity: 1;
+  margin-bottom: 20px;
+}
+
+.ant-dropdown .ant-dropdown-menu {
+  background-color: var(--background2);
+  border: 1px solid rgba(45, 45, 45);
+}
+
+.ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-title-content {
+  padding: 1vh 1vw;
+  border: 3px solid transparent;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-title-content:hover {
+  border-left: 3px solid var(--borderHover);
+}
+
+.ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-title-content > a {
+  color: var(--text);
+  opacity: 0.5;
+  font-size: 18px;
+}
+
+.ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-title-content > a:hover {
+  color: var(--textHover);
+  opacity: 1;
+}
+
+.star {
+  color: white;
+  display: inline-block;
+  position: relative;
+}
+
+.highlightedStar {
+  color: #f8f800;
+}
+
+.halfStar {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.halfStar::before {
+  content: "\2605";
+  position: absolute;
+  width: 50%;
+  overflow: hidden;
+  color: #f8f800;
+}
+
+.ant-select-selection-item {
+  color: var(--text);
+}
+
+.ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector {
+  background: var(--background2);
+  border-color: var(--border);
+}
+
+.ant-select-single .ant-select-selection-item {
+  font-size: 16px;
+}
+
+.ant-select-single.ant-select-open .ant-select-selection-item {
+  color: var(--textHover);
+  font-size: 16px;
+}
+
+.ant-select .ant-select-arrow .anticon svg {
+  fill: var(--text);
+}
+
+.ant-select-item-option-content {
+  font-size: 16px;
+  color: var(--text);
+}
+
+.ant-badge .ant-scroll-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  line-height: 16px;
+  color: var(--background);
+  background-color: var(--borderHover);
+}
+
+.ant-breadcrumb-link span,
+.ant-breadcrumb-link span svg {
+  font-size: 18px;
+}
+
+.ant-breadcrumb {
+  padding: 1vh;
+}
+
+@media only screen and (max-width: 600px),
+  (min-width: 601px) and (max-width: 767px) {
+  .wrapFaq {
+    padding: 4vh 4vw;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .wrapFaq {
+    padding: 4vh 4vw;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .wrapFaq {
+    padding: 4vh 8vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .wrapFaq {
+    padding: 4vh 13.5vw;
+  }
+}
+
+.ant-form-item-explain-error {
+  font-size: 14px;
+}
+
+.custom-rate .ant-rate-star {
+  border: 1px solid #ccc;
+  margin: 0 2px;
+}
+
+.ant-message .ant-message-notice-wrapper .ant-message-notice-content {
+  background-color: var(--background2);
+  color: var(--textHover);
+  font-size: 16px;
+}
+
+.ant-steps .ant-steps-item-wait .ant-steps-item-icon >.ant-steps-icon .ant-steps-icon-dot {
+  background: var(--textHover);
+  opacity: 0.5;
+}

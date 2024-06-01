@@ -1,0 +1,572 @@
+.productInfoWrapper {
+  padding: 2vh 0;
+  display: flex;
+  height: 94%;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.leftBlock {
+  text-align: center;
+  width: 45%;
+  animation: slideInFromLeft 1.5s ease;
+}
+
+.productImage {
+  height: 80%;
+}
+
+.productPreviewImages {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  justify-content: center;
+}
+
+.productSmallImage {
+  cursor: pointer;
+  opacity: 0.5;
+  width: 7vw;
+  padding: 1vh 1vw;
+  filter: grayscale(100%);
+}
+
+.productSmallImage:hover {
+  opacity: 1;
+  filter: grayscale(0);
+}
+
+.activeSmallImage {
+  opacity: 1;
+  filter: grayscale(0);
+  border: 1px solid #2d2d2d;
+  border-radius: 28px;
+}
+
+.rightBlock {
+  width: 55%;
+  animation: slideInFromRight 1.5s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.productName {
+  font-size: 36px;
+  font-weight: bold;
+  padding: 1vh 0;
+  border-bottom: 1px solid #2d2d2d;
+}
+
+.techInfoProduct {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 1vh 0;
+  font-size: 18px;
+  border-bottom: 1px solid #2d2d2d;
+}
+
+.techInfoProduct span {
+  display: flex;
+  align-items: baseline;
+  font-size: 18px;
+}
+
+.reviewsLength {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.reviewsLength:hover {
+  opacity: 1;
+}
+
+.productCode {
+  opacity: 0.7;
+  font-size: 18px;
+}
+
+.NotAvailableInStore,
+.InStock,
+.InStockSmall {
+  display: flex;
+  align-items: center;
+  padding: 1vh 0;
+  opacity: 0.7;
+}
+
+.NotAvailableInStore span,
+.InStock span,
+.InStockSmall span {
+  font-size: 20px;
+}
+
+.NotAvailableInStore {
+  color: gray;
+}
+
+.InStock {
+  opacity: 1;
+  color: #019a57;
+}
+
+.InStockSmall {
+  color: #fc784c;
+}
+
+.productPriceWrapper {
+  border-bottom: 1px solid #2d2d2d;
+  padding-bottom: 1vh;
+}
+
+.productPriceBlock {
+  display: flex;
+  align-items: center;
+}
+
+.productPrice {
+  color: var(--textHover);
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.productOldPrice del {
+  margin-left: 1vw;
+  opacity: 0.7;
+  font-size: 21px;
+  color: var(--text);
+}
+
+.productPriceUsdt,
+.productPriceUsdt span {
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.productPriceUsdt {
+  color: var(--textHover);
+}
+
+.productPriceUsdt span {
+  color: var(--text);
+}
+
+.recommendBlockWrapper {
+  padding: 2vh 0;
+  border-bottom: 1px solid #2d2d2d;
+  height: 12vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.leftBlockRecommend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 100%;
+}
+
+.leftBlockRecommend img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.centerBlockRecommend {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.centerBlockRecommend span {
+  margin-left: 1vw;
+  font-size: 22px;
+  color: var(--textHover);
+}
+
+.centerBlockRecommend p {
+  margin-left: 1vw;
+  font-size: 18px;
+  color: var(--text);
+}
+
+.rightBlockRecommend {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rightBlockRecommend span {
+  margin-left: 1vw;
+  font-size: 20px;
+  color: var(--textHover);
+}
+
+.rightBlockRecommend p {
+  cursor: pointer;
+}
+
+.ActiveImage {
+  animation: 1s jump ease;
+}
+
+.ActiveImageSecondTime {
+  animation: 1s blink ease;
+}
+
+.ServicesWrapper {
+  border-bottom: 1px solid #2d2d2d;
+  padding: 1vh 0;
+}
+
+.ServicesBlock {
+  padding: 2vh 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  opacity: 0.7;
+}
+
+.ServicesBlock div span {
+  color: var(--text);
+}
+
+.ServicesName {
+  margin-left: 1vw;
+}
+
+.activeService {
+  opacity: 1;
+}
+
+.activeService div span {
+  color: var(--textHover);
+}
+
+.BuyButton {
+  opacity: 0.7;
+  background-color: var(--background2);
+  color: var(--whiteTeal);
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 1vh 1vw;
+  font-size: 22px;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  width: 40%;
+  margin-top: 3vh;
+}
+
+.BuyButton:hover:not(:disabled) {
+  border: 1px solid var(--borderHover);
+  opacity: 1;
+}
+
+.BuyButton:disabled {
+  cursor: not-allowed;
+  border-color: gray;
+  color: gray;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .productInfoWrapper {
+    padding: 2vh 0;
+    display: flex;
+    height: 94%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .leftBlock {
+    width: 100%;
+  }
+  .rightBlock {
+    width: 100%;
+  }
+  .productImage {
+    height: 50%;
+    width: 50%;
+  }
+  .leftBlockRecommend {
+    width: 10%;
+  }
+  .centerBlockRecommend {
+    width: 65%;
+  }
+  .centerBlockRecommend span {
+    font-size: 16px;
+  }
+  .centerBlockRecommend p {
+    font-size: 12px;
+  }
+  .rightBlockRecommend {
+    width: 25%;
+  }
+  .rightBlockRecommend span {
+    font-size: 14px;
+  }
+  .rightBlockRecommend img {
+    width: 18px;
+    height: 18px;
+  }
+  .ServicesName {
+    font-size: 16px;
+  }
+  .ServicesPrice {
+    font-size: 16px;
+  }
+  .productSmallImage {
+    width: 15vw;
+  }
+  .productName {
+    font-size: 24px;
+  }
+  .techInfoProduct {
+    padding: 1vh 0;
+    font-size: 14px;
+  }
+  .techInfoProduct span {
+    font-size: 14px;
+  }
+  .productPriceUsdt span,
+  .productPriceUsdt {
+    font-size: 16px;
+  }
+  .productPrice span,
+  .productPrice {
+    font-size: 32px;
+  }
+  .productOldPrice span,
+  .productOldPrice {
+    margin-left: 2vw;
+    font-size: 16px;
+  }
+  .InStockSmall span,
+  .NotAvailableInStore span,
+  .InStock span {
+    font-size: 16px;
+  }
+  .InStockSmall img,
+  .NotAvailableInStore img,
+  .InStock img {
+    width: 16px;
+    height: 16px;
+  }
+  .rightBlockRecommend span {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .productInfoWrapper {
+    padding: 2vh 0;
+    display: flex;
+    height: 94%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .leftBlock {
+    width: 100%;
+  }
+  .rightBlock {
+    width: 100%;
+  }
+  .productImage {
+    height: 50%;
+    width: 50%;
+  }
+  .leftBlockRecommend {
+    width: 10%;
+  }
+  .centerBlockRecommend {
+    width: 70%;
+  }
+  .rightBlockRecommend {
+    width: 20%;
+  }
+  .ServicesName {
+    font-size: 20px;
+  }
+  .ServicesPrice {
+    font-size: 20px;
+  }
+  .productSmallImage {
+    width: 10vw;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .productInfoWrapper {
+    padding: 2vh 0;
+    display: flex;
+    height: 94%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .leftBlock {
+    width: 100%;
+  }
+  .rightBlock {
+    width: 100%;
+  }
+  .productImage {
+    height: 50%;
+    width: 50%;
+  }
+  .leftBlockRecommend {
+    width: 10%;
+  }
+  .centerBlockRecommend {
+    width: 72%;
+  }
+  .rightBlockRecommend {
+    width: 18%;
+  }
+  .rightBlockRecommend span {
+    font-size: 22px;
+  }
+  .ServicesName {
+    font-size: 20px;
+  }
+  .ServicesPrice {
+    font-size: 20px;
+  }
+  .productSmallImage {
+    width: 10vw;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .productInfoWrapper {
+    padding: 2vh 0;
+    display: flex;
+    height: 94%;
+    flex-direction: row;
+    overflow: hidden;
+  }
+  .productImage {
+    height: 80%;
+    width: 100%;
+  }
+  .leftBlockRecommend {
+    width: 10%;
+  }
+  .centerBlockRecommend {
+    width: 65%;
+  }
+  .rightBlockRecommend {
+    width: 25%;
+  }
+  .ServicesName {
+    font-size: 18px;
+  }
+  .ServicesPrice {
+    font-size: 18px;
+  }
+  .productSmallImage {
+    width: 10vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  .productInfoWrapper {
+    padding: 2vh 0;
+    display: flex;
+    height: 94%;
+    flex-direction: row;
+    overflow: hidden;
+  }
+  .leftBlock {
+    text-align: center;
+    width: 45%;
+    animation: slideInFromLeft 1.5s ease;
+  }
+  .productImage {
+    width: 100%;
+    height: 80%;
+  }
+  .leftBlockRecommend {
+    width: 10%;
+  }
+  .centerBlockRecommend {
+    width: 65%;
+  }
+  .rightBlockRecommend {
+    width: 25%;
+  }
+  .productSmallImage {
+    width: 8vw;
+  }
+  .ServicesName {
+    font-size: 20px;
+  }
+  .ServicesPrice {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .productInfoWrapper {
+    padding: 2vh 0;
+    display: flex;
+    height: 94%;
+    flex-direction: row;
+    overflow: hidden;
+  }
+  .productImage {
+    width: 90%;
+  }
+  .ServicesName {
+    font-size: 20px;
+  }
+  .ServicesPrice {
+    font-size: 20px;
+  }
+}

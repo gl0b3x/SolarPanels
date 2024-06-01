@@ -1,0 +1,92 @@
+.autoplayProgress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  background-color: transparent;
+}
+
+.autoplayProgress span {
+  color: var(--whiteTeal);
+  background-color: transparent;
+}
+
+.autoplayProgress svg {
+  background-color: transparent;
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 5px;
+  stroke: var(--whiteTeal);
+  fill: none;
+  stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+
+.sliderPhoto {
+  width: 100%;
+  height: 100%;
+}
+
+.swiperWrapper {
+  background-color: var(--background);
+  padding: 0 13.5vw;
+}
+
+.animated {
+  animation: opacity 1.5s ease;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+    transform: translateY(-5%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .swiperWrapper {
+    padding: 0;
+    height: 40vh;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .swiperWrapper {
+    padding: 0;
+    height: 60vh;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .swiperWrapper {
+    padding: 0 4vw;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .swiperWrapper {
+    padding: 0 8vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .swiperWrapper {
+    padding: 0 13.5vw;
+  }
+}

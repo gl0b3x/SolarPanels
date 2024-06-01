@@ -1,0 +1,185 @@
+.footer {
+  width: 100%;
+  background-color: black;
+  min-height: 50vh;
+  display: flex;
+  padding: 6vh 13.5vw;
+  justify-content: space-between;
+}
+
+.footer h1 {
+  color: var(--text);
+  font-size: 24px;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footerLogo {
+  display: flex;
+  text-decoration: none;
+}
+
+.footerLogoText {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerLogoText span {
+  color: teal;
+  margin-left: 0.3vw;
+  font-size: 32px;
+}
+
+.footerLogoText p {
+  color: white;
+  opacity: 0.8;
+  margin-left: 0.4vw;
+  font-size: 17px;
+}
+
+.leftColumn,
+.centerColumn,
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.leftColumn a,
+.centerColumn a,
+.rightColumn a {
+  color: var(--text);
+  opacity: 0.7;
+}
+
+.leftColumn a:hover,
+.centerColumn a:hover,
+.rightColumn a:hover {
+  color: var(--textHover);
+}
+
+.leftColumn a span,
+.centerColumn a span,
+.rightColumn a span {
+  font-size: 20px;
+}
+
+.leftColumn h1 {
+  margin-bottom: 2vh;
+}
+
+.rightColumn span {
+  font-size: 20px;
+  color: var(--text);
+}
+
+.footerMail,
+.footerTelephone,
+.footerSocialMedia {
+  margin-top: 2vh;
+}
+
+.footerSocialMedia a {
+  margin-right: 1vw;
+}
+
+.footerSocialMedia img {
+  opacity: 0.7;
+}
+
+.footerSocialMedia img:hover {
+  opacity: 1;
+}
+
+.footerPaymentMethods {
+  margin-top: 1.5vh;
+}
+
+.footerPaymentMethods img {
+  margin-right: 0.75vw;
+  opacity: 0.7;
+}
+
+.footerInfoText {
+  margin-top: 4vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  opacity: 0.7;
+}
+
+.footerMarginTop {
+  margin-top: 20px;
+}
+
+.footerMarginBottom {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px),
+  (min-width: 601px) and (max-width: 767px) {
+  .footer {
+    text-align: center;
+    align-items: center;
+    padding: 6vh 4vw;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .footer h1 {
+    font-size: 18px;
+    margin-top: 3vh;
+  }
+  .footer a span {
+    font-size: 16px;
+  }
+  .footerLogoText {
+    margin-top: 10%;
+  }
+  .footerLogoText span {
+    font-size: 16px;
+  }
+  .footerLogoText p {
+    font-size: 8px;
+  }
+  .footerMail, .footerTelephone, .footerInfoText span {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer {
+    padding: 6vh 4vw;
+  }
+  .footerLogoText {
+    margin-top: 10%;
+  }
+  .footerLogoText span {
+    font-size: 16px;
+  }
+  .footerLogoText p {
+    font-size: 8px;
+  }
+  .footerMail, .footerTelephone, .footerInfoText span {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .footer {
+    padding: 6vh 8vw;
+  }
+  .footerMail, .footerTelephone, .footerInfoText span {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer {
+    padding: 6vh 13.5vw;
+  }
+  .footerMail, .footerTelephone, .footerInfoText span {
+    font-size: 20px;
+  }
+}

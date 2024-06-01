@@ -1,0 +1,138 @@
+.wrapperDone {
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3vh 0;
+  text-align: center;
+}
+
+.title {
+  font-size: 32px;
+  width: 100%;
+  padding: 1vh 0;
+  border-bottom: 3px solid #2d2d2d;
+  color: var(--textHover);
+}
+
+.thanks {
+  margin-top: 2vh;
+  width: 50%;
+  font-size: 24px;
+  color: var(--textHover);
+}
+
+.thanks p {
+  font-size: 20px;
+}
+
+.warning {
+  width: 50%;
+  margin-top: 5vh;
+  border: 1px solid #2d2d2d;
+  padding: 2vh 2vw;
+  border-radius: 18px;
+}
+
+.warningTitle {
+  color: var(--text);
+  font-size: 24px;
+  text-align: center;
+}
+
+.warning ul {
+  list-style-type: none;
+}
+
+.warning li {
+  font-size: 18px;
+  padding: 1vh 0;
+  border-radius: 5px;
+  color: var(--text);
+  line-height: 24px;
+  border-bottom: 1px solid #2d2d2d;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--textHover);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.thanksCompany {
+  margin-top: 5vh;
+  font-size: 26px;
+  color: var(--textHover);
+  text-align: center;
+}
+
+@media only screen and (max-width: 601px) {
+  .title {
+    font-size: 24px;
+  }
+  .thanks {
+    font-size: 20px;
+    width: 80%;
+  }
+  .thanks p {
+    font-size: 16px;
+  }
+  .warning {
+    width: 80%;
+  }
+  .warningTitle {
+    font-size: 20px;
+  }
+  .warning li {
+    font-size: 16px;
+  }
+  .link {
+    font-size: 16px;
+  }
+  .thanksCompany {
+    font-size: 20px;
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .title {
+    font-size: 24px;
+  }
+  .thanks {
+    font-size: 20px;
+    width: 80%;
+  }
+  .thanks p {
+    font-size: 16px;
+  }
+  .warning {
+    width: 80%;
+  }
+  .warningTitle {
+    font-size: 20px;
+  }
+  .warning li {
+    font-size: 16px;
+  }
+  .link {
+    font-size: 16px;
+  }
+  .thanksCompany {
+    font-size: 20px;
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .warning {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .warning {
+    width: 70%;
+  }
+}

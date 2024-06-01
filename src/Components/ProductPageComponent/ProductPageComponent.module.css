@@ -1,0 +1,127 @@
+.productBlock {
+  color: var(--text);
+  background-color: var(--background2);
+  height: 90%;
+  padding: 2vh 2vw;
+  border-radius: 28px;
+}
+
+.chooseInfo {
+  padding: 1vh 0;
+  width: 100%;
+}
+
+.chooseInfoUl {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.chooseInfoItem {
+  width: calc(100% / 3);
+  text-align: center;
+  border-bottom: 1px solid #2d2d2d;
+  padding: 1vh 1vw;
+  display: inline-block;
+  font-size: 18px;
+  color: var(--text);
+  cursor: pointer;
+  transition: color 0.3s ease;
+  opacity: 0.6;
+  font-weight: bold;
+}
+
+.chooseInfoItem:hover {
+  color: var(--textHover);
+  opacity: 0.8;
+}
+
+.activeInfoBlock {
+  color: var(--textHover);
+  opacity: 0.8;
+  border-bottom: 1px solid var(--borderHover);
+}
+
+@media only screen and (max-width: 350px) {
+  .productBlockWrapper {
+    padding: 1vh 4vw;
+    background-color: var(--background);
+  }
+  .chooseInfoItem {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 351px) and (max-width: 600px) {
+  .productBlockWrapper {
+    background-color: var(--background);
+    padding: 1vh 4vw;
+  }
+  .chooseInfoItem {
+    font-size: 14px;
+  }
+  .returnBack img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .productBlockWrapper {
+    background-color: var(--background);
+    padding: 1vh 4vw;
+  }
+  .chooseInfoItem {
+    font-size: 18px;
+    padding: 0 2vw;
+  }
+  .returnBack img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .productBlockWrapper {
+    background-color: var(--background);
+    padding: 1vh 4vw;
+  }
+  .chooseInfoItem {
+    font-size: 18px;
+  }
+  .returnBack img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .productBlockWrapper {
+    background-color: var(--background);
+    padding: 1vh 8vw;
+    height: 90vh;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  .productBlockWrapper {
+    background-color: var(--background);
+    padding: 1vh 13.5vw;
+    height: 90vh;
+  }
+  .chooseInfoItem {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .productBlockWrapper {
+    background-color: var(--background);
+    height: 90vh;
+    padding: 1vh 13.5vw;
+  }
+  .chooseInfoItem {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,111 @@
+.warrantyWrapper {
+  background-color: var(--background);
+  color: var(--textHover);
+}
+
+.warrantyWrapper h1 {
+  font-size: 32px;
+  text-align: center;
+  padding: 2vh 0;
+  border-bottom: 1px solid #2d2d2d;
+}
+
+.warrantyPhoto {
+  padding: 2vh 0;
+  width: 100%;
+  border-radius: 48px;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(1.2) translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+.warrantyText {
+  padding-bottom: 2vh;
+}
+
+.warrantyText p {
+  font-size: 18px;
+  padding: 2vh 0;
+}
+
+.warrantyText ul {
+  list-style-type: square;
+  padding: 0 2vw;
+}
+
+.warrantyText li {
+  font-size: 16px;
+  padding: 1vh 0;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .warrantyWrapper {
+    padding: 3vh 4vw;
+  }
+  .warrantyWrapper h1 {
+    font-size: 24px
+  }
+  .warrantyPhoto {
+    height: 300px;
+  }
+  .warrantyText p {
+    font-size: 14px;
+  }
+  .warrantyText li {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .warrantyWrapper {
+    padding: 3vh 4vw;
+  }
+  .warrantyWrapper h1 {
+    font-size: 24px
+  }
+  .warrantyPhoto {
+    height: 350px;
+  }
+  .warrantyText p {
+    font-size: 16px;
+  }
+  .warrantyText li {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .warrantyWrapper {
+    padding: 3vh 4vw;
+  }
+  .warrantyPhoto {
+    height: 500px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .warrantyWrapper {
+    padding: 3vh 8vw;
+  }
+  .warrantyPhoto {
+    height: 500px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .warrantyWrapper {
+    padding: 3vh 13.5vw;
+  }
+  .warrantyPhoto {
+    height: 66vh;
+  }
+}

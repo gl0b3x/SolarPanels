@@ -1,0 +1,111 @@
+.filterButtonShow {
+    width: 100%;
+    height: 3vh;
+    border-radius: 28px;
+    border: 1px solid var(--border);
+    background-color: var(--background2);
+    transition: 0.2s ease-in-out;
+    color: var(--text);
+    opacity: 0.7;
+    cursor: pointer;
+    display: none;
+}
+
+.filterButtonShow:hover {
+    opacity: 1;
+}
+
+.ActiveFilterButton {
+    display: block;
+}
+
+.filterWrapper {
+    display: flex;
+    flex-direction: column;
+    color: var(--text);
+    padding: 2vh 0;
+    border-top: 1px solid #2d2d2d;
+}
+
+.filterName {
+    font-size: 18px;
+    color: var(--textHover);
+}
+
+.filterFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.filterFlex span {
+    font-size: 20px;
+    padding: 1vh 0;
+}
+
+.filterBrand {
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+}
+
+.filterBrand span {
+    font-size: 18px;
+    padding: 0 0.5vw;
+}
+
+.filterBrand input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    cursor: pointer;
+    position: relative;
+}
+
+.filterBrand input[type="checkbox"]:hover {
+    border-color: #007bff;
+}
+
+.filterBrand input[type="checkbox"]:checked {
+    background-color: var(--borderHover);
+    border-color: var(--borderHover);
+}
+
+.filterBrand input[type="checkbox"]::before {
+    content: "\2715";
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--background);
+    font-size: 16px;
+    visibility: hidden;
+}
+
+.filterBrand input[type="checkbox"]:checked::before {
+    visibility: visible;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .filterBrand span {
+        font-size: 16px;
+    }
+    .filterFlex span {
+        font-size: 16px;
+    }
+    .filterBrand input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+
+
+
+
